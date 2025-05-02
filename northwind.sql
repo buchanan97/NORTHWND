@@ -2,6 +2,12 @@
 --- PostgreSQL database dump
 ---
 
+-- Create a user with password 'nyit2001'
+CREATE USER northwind_user WITH PASSWORD 'nyit2001!!';
+
+-- Grant all privileges on the NorthWind database to this user
+GRANT ALL PRIVILEGES ON DATABASE NorthWind TO northwind_user;
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
