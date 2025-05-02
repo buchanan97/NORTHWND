@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
-from . import models, schema, crud, db
+from API import models, schema, crud, db
 
 app = FastAPI()
 
@@ -18,8 +18,6 @@ def read_customers(skip: int = 0, limit: int = 10, database: Session = Depends(g
     return customers
 
 
-import psycopg2
-
 def connect_and_query(username, password):
     try:
         # Connect to the NorthWind database with your credentials
@@ -28,7 +26,7 @@ def connect_and_query(username, password):
             user="northwind_user",   # The user created above
             password="nyit2001!!",
             host="localhost",        # Change if your DB is remote
-            port="5432"
+            port="5500"
         )
         cur = conn.cursor()
 
