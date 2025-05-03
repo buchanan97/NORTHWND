@@ -3,7 +3,7 @@
 ---
 
 -- Create a user with password 'nyit2001'
-CREATE USER northwind_user WITH PASSWORD 'nyit2001!!';
+CREATE USER northwind WITH PASSWORD '1234';
 
 -- Grant all privileges on the NorthWind database to this user
 GRANT ALL PRIVILEGES ON DATABASE NorthWind TO northwind_user;
