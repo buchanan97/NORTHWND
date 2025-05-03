@@ -18,7 +18,6 @@ def read_customers(skip: int = 0, limit: int = 10, database: Session = Depends(g
     customers = crud.get_customers(database, skip=skip, limit=limit)
     return customers
 
-
 def connect_and_query(username, password):
     try:
         # Connect to the NorthWind database with your credentials
