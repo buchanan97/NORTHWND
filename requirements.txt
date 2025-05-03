@@ -1,4 +1,8 @@
-fastapi
-uvicorn
-sqlalchemy
-psycopg2-binary
+# Dependincies required for this project
+# Install them using pip install -r requirements.txt
+
+fastapi #For creating the API
+uvicorn #ASGI server for running the API
+sqlalchemy #ORM for database interactions
+psycopg2-binary #PostgreSQL adapter for Python
+

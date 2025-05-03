@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
+import db, models, schema, crud
 from sqlalchemy.orm import Session
-from API import models, schema, crud, db
 import psycopg2
 
 app = FastAPI()
