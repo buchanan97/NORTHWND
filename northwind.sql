@@ -3,10 +3,10 @@
 ---
 
 -- Create a user with password 'nyit2001'
-CREATE USER northwind WITH PASSWORD '1234';
+CREATE USER postgres WITH PASSWORD '1234';
 
 -- Grant all privileges on the NorthWind database to this user
-GRANT ALL PRIVILEGES ON DATABASE NorthWind TO northwind_user;
+GRANT ALL PRIVILEGES ON DATABASE NorthWind TO postgre;
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
